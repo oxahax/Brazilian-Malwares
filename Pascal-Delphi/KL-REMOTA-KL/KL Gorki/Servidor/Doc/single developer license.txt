@@ -1,0 +1,73 @@
+TMS component single developer license agreement
+------------------------------------------------
+
+TMS component license agreement between
+TMS software and holder of the component license.
+
+
+The license of the component gives you the right to:
+
+- using the component for development of applications
+  or any type of software module in general by a single
+  developer within the company holding the license.
+- sell any commercial compiled application with
+  the control, published by the company holding
+  the license.
+- make modifications to the source code of
+  component for own use.
+- use the component and source code on all development
+  systems used by the developer assigned by the company
+  holding the license.
+- request future versions of the component
+  at any time either through the web or by email
+  for a full version cycle of the component or maximum
+  3 years after purchase. After expiry of the registration
+  TMS software can no longer provide any old version of
+  software, documentation or samples. TMS software is not
+  a backup service and expects backups to be made by the
+  licensed user. 
+- access to priority email support by the single
+  developer assigned by the company holding the license
+  during the license period.
+- sell any number of applications in any quantity without
+  any additional run-time fees required
+
+The license agreement prevents you from:
+
+- distributing parts or full source code of
+  any component from TMS software.
+- using parts or full source code of components
+  from the TMS software for creating any type of
+  other components that are distributed or sold with
+  or without source code.
+- changing the source code of any component from
+  TMS software and sell or distribute this as
+  a modified product.
+- creating a descendant compiled product such as
+  OCX or ActiveX control and sell or distribute
+  this as a product
+- using the control in applications sold with
+  different publisher name than the company holding
+  the license
+- transfer the license to another developer
+- transfer the license to another company
+- using the components by multiple developers in the
+  company holding the license
+- the license agreement terminates immediately
+  after violation of any of the terms and conditions
+  described
+
+
+Disclaimer:
+
+THIS SOFTWARE IS PROVIDED TO YOU "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED INCLUDING 
+BUT NOT LIMITED TO THE APPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE. 
+YOU ASSUME THE ENTIRE RISK AS TO THE ACCURACY AND THE USE OF THE SOFTWARE AND ALL OTHER RISK ARISING OUT OF THE 
+USE OR PERFORMANCE OF THIS SOFTWARE AND DOCUMENTATION. 
+tmssoftware.com bvba SHALL NOT BE LIABLE FOR ANY DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR INABILITY TO 
+USE THIS SOFTWARE, EVEN IF tmssoftware.com bvba  HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL tmssoftware.com bvba  BE LIABLE FOR ANY 
+CONSEQUENTIAL, INCIDENTAL, DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES WHATSOEVER, INCLUDING BUT NOT 
+LIMITED TO DAMAGES OR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER 
+PECUNIARY LOSS, EVEN IF tmssoftware.com bvba HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
