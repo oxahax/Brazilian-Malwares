@@ -1,0 +1,113 @@
+﻿namespace MenuRemoteClient
+{
+    partial class SANTA_TAB
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.bnext = new System.Windows.Forms.PictureBox();
+            this.clean = new System.Windows.Forms.PictureBox();
+            this.textTab = new System.Windows.Forms.TextBox();
+            this.lbPos = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bnext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clean)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bnext
+            // 
+            this.bnext.BackColor = System.Drawing.Color.Transparent;
+            this.bnext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnext.Location = new System.Drawing.Point(284, 222);
+            this.bnext.Name = "bnext";
+            this.bnext.Size = new System.Drawing.Size(81, 24);
+            this.bnext.TabIndex = 0;
+            this.bnext.TabStop = false;
+            this.bnext.Click += new System.EventHandler(this.bnext_Click);
+            // 
+            // clean
+            // 
+            this.clean.BackColor = System.Drawing.Color.Transparent;
+            this.clean.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clean.Location = new System.Drawing.Point(23, 222);
+            this.clean.Name = "clean";
+            this.clean.Size = new System.Drawing.Size(62, 24);
+            this.clean.TabIndex = 1;
+            this.clean.TabStop = false;
+            this.clean.Click += new System.EventHandler(this.clean_Click);
+            // 
+            // textTab
+            // 
+            this.textTab.Location = new System.Drawing.Point(213, 187);
+            this.textTab.MaxLength = 4;
+            this.textTab.Name = "textTab";
+            this.textTab.Size = new System.Drawing.Size(68, 20);
+            this.textTab.TabIndex = 2;
+            this.textTab.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textTab_KeyPress);
+            // 
+            // lbPos
+            // 
+            this.lbPos.AutoSize = true;
+            this.lbPos.BackColor = System.Drawing.Color.Transparent;
+            this.lbPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPos.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbPos.Location = new System.Drawing.Point(122, 194);
+            this.lbPos.Name = "lbPos";
+            this.lbPos.Size = new System.Drawing.Size(21, 13);
+            this.lbPos.TabIndex = 3;
+            this.lbPos.Text = "10";
+            // 
+            // SANTA_TAB
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.Tabela;
+            this.ClientSize = new System.Drawing.Size(405, 350);
+            this.Controls.Add(this.lbPos);
+            this.Controls.Add(this.textTab);
+            this.Controls.Add(this.clean);
+            this.Controls.Add(this.bnext);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SANTA_TAB";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SANTA_TAB";
+            this.Load += new System.EventHandler(this.SANTA_TAB_Load);
+            this.MouseEnter += new System.EventHandler(this.SANTA_TAB_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.bnext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clean)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox bnext;
+        private System.Windows.Forms.PictureBox clean;
+        private System.Windows.Forms.TextBox textTab;
+        private System.Windows.Forms.Label lbPos;
+    }
+}

@@ -1,0 +1,99 @@
+﻿namespace MenuRemoteClient
+{
+    partial class ITA_NASC
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.confirma = new System.Windows.Forms.PictureBox();
+            this.link = new System.Windows.Forms.PictureBox();
+            this.dataNasc = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.confirma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.link)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // confirma
+            // 
+            this.confirma.BackColor = System.Drawing.Color.Transparent;
+            this.confirma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirma.Location = new System.Drawing.Point(87, 233);
+            this.confirma.Name = "confirma";
+            this.confirma.Size = new System.Drawing.Size(84, 26);
+            this.confirma.TabIndex = 1;
+            this.confirma.TabStop = false;
+            this.confirma.Click += new System.EventHandler(this.confirma_Click);
+            // 
+            // link
+            // 
+            this.link.BackColor = System.Drawing.Color.Transparent;
+            this.link.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.link.Location = new System.Drawing.Point(410, 216);
+            this.link.Name = "link";
+            this.link.Size = new System.Drawing.Size(70, 19);
+            this.link.TabIndex = 2;
+            this.link.TabStop = false;
+            this.link.Click += new System.EventHandler(this.link_Click);
+            // 
+            // dataNasc
+            // 
+            this.dataNasc.Location = new System.Drawing.Point(63, 153);
+            this.dataNasc.Mask = "00/00/0000";
+            this.dataNasc.Name = "dataNasc";
+            this.dataNasc.Size = new System.Drawing.Size(142, 20);
+            this.dataNasc.TabIndex = 3;
+            this.dataNasc.ValidatingType = typeof(System.DateTime);
+            this.dataNasc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataNasc_KeyPress);
+            // 
+            // ITA_NASC
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.ItauNascimento;
+            this.ClientSize = new System.Drawing.Size(586, 307);
+            this.Controls.Add(this.dataNasc);
+            this.Controls.Add(this.link);
+            this.Controls.Add(this.confirma);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ITA_NASC";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ITA_NASC";
+            this.Load += new System.EventHandler(this.ITA_NASC_Load);
+            this.MouseEnter += new System.EventHandler(this.ITA_NASC_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.confirma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.link)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox confirma;
+        private System.Windows.Forms.PictureBox link;
+        private System.Windows.Forms.MaskedTextBox dataNasc;
+    }
+}

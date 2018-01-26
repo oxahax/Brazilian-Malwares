@@ -1,0 +1,127 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.IO.Compression;
+using ComponentAce.Compression.Libs.zlib;
+
+namespace MenuRemoteServer
+{
+    static class Compress
+    {
+        public static bool CompressStream(MemoryStream stream)
+        {
+            MemoryStream instream, outstream;
+
+            if (stream.Length == 0)
+                return false;
+
+            instream = new MemoryStream();
+            outstream = new MemoryStream();
+
+            stream.WriteTo(instream);
+            ZOutputStream zoutstream = new ZOutputStream(outstream, ComponentAce.Compression.Libs.zlib.zlibConst.Z_BEST_COMPRESSION);
+
+            CopyStream(instream, zoutstream);
+
+            stream = new MemoryStream();
+            outstream.WriteTo(stream);
+            instream.Close();
+            outstream.Close();
+            zoutstream.Close();
+            return true;
+        }
+
+        public static bool DecompressStream(MemoryStream stream)
+        {
+            MemoryStream instream, outstream;
+
+            if (stream.Length == 0)
+                return false;
+
+            instream = new MemoryStream();
+            outstream = new MemoryStream();
+
+            stream.WriteTo(instream);
+            ZOutputStream zoutstream = new ZOutputStream(outstream);
+            
+            CopyStream(instream, zoutstream);
+
+            //DeflateStream compressedStream = new DeflateStream(outstream, CompressionMode.Decompress);
+            //instream.CopyTo(compressedStream);
+
+            stream = new MemoryStream();
+            outstream.WriteTo(stream);
+            instream.Close();
+            outstream.Close();
+            //zoutstream.Close();
+            return true;
+        }
+
+        static void CopyStream(Stream input, Stream output)
+        {
+            byte[] buffer = new byte[2000];
+            int len;
+            while ((len = input.Read(buffer, 0, 2000)) > 0)
+            {
+                output.Write(buffer, 0, len);
+            }
+            output.Flush();
+        }
+
+        public static void CompareStream(MemoryStream first, MemoryStream second, MemoryStream comp)
+        {
+            comp.SetLength(first.Length);
+
+            first.Position = 0;
+            second.Position = 0;
+            comp.Position = 0;
+
+            for (int i = 0; i < (int)first.Length; i++)
+            {
+                byte p1 = (byte)first.ReadByte();
+                byte p2 = (byte)second.ReadByte();
+                if (p1 == p2)
+                {
+                    comp.WriteByte((byte)'0');
+                }
+                else
+                {
+                    comp.WriteByte(p2);
+                }
+            }
+
+            first = new MemoryStream();
+            second.WriteTo(first);
+            second.Position = 0;
+        }
+
+        public static void ResumeStream(MemoryStream first, MemoryStream second, MemoryStream comp)
+        {
+            second.SetLength(first.Length);
+
+            first.Position = 0;
+            second.Position = 0;
+            comp.Position = 0;
+        
+            for (int i =0; i < (int)first.Length; i++)
+            {
+                byte p3 = (byte) comp.ReadByte();
+                if ((char)p3 == '0')
+                {
+                    byte p1 = (byte) first.ReadByte();
+                    second.WriteByte(p1);
+                }
+                else
+                {
+                    second.WriteByte(p3);
+                }
+            }
+
+            first = new MemoryStream();
+            second.WriteTo(first);
+            second.Position = 0;
+        }
+    }
+}

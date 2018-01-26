@@ -1,0 +1,104 @@
+﻿namespace MenuRemoteClient
+{
+    partial class BB_02
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.textSen6 = new System.Windows.Forms.TextBox();
+            this.btn_entrar6 = new System.Windows.Forms.PictureBox();
+            this.btn_limpar6 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_entrar6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpar6)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // textSen6
+            // 
+            this.textSen6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textSen6.Location = new System.Drawing.Point(22, 163);
+            this.textSen6.MaxLength = 6;
+            this.textSen6.Multiline = true;
+            this.textSen6.Name = "textSen6";
+            this.textSen6.PasswordChar = '*';
+            this.textSen6.Size = new System.Drawing.Size(66, 14);
+            this.textSen6.TabIndex = 0;
+            this.textSen6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textSen6_KeyPress);
+            // 
+            // btn_entrar6
+            // 
+            this.btn_entrar6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_entrar6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_entrar6.Location = new System.Drawing.Point(22, 230);
+            this.btn_entrar6.Name = "btn_entrar6";
+            this.btn_entrar6.Size = new System.Drawing.Size(75, 21);
+            this.btn_entrar6.TabIndex = 1;
+            this.btn_entrar6.TabStop = false;
+            this.btn_entrar6.Click += new System.EventHandler(this.btn_entrar6_Click);
+            this.btn_entrar6.MouseLeave += new System.EventHandler(this.btn_entrar6_MouseLeave);
+            this.btn_entrar6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_entrar6_MouseMove);
+            // 
+            // btn_limpar6
+            // 
+            this.btn_limpar6.BackColor = System.Drawing.Color.Transparent;
+            this.btn_limpar6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_limpar6.Location = new System.Drawing.Point(112, 230);
+            this.btn_limpar6.Name = "btn_limpar6";
+            this.btn_limpar6.Size = new System.Drawing.Size(74, 21);
+            this.btn_limpar6.TabIndex = 2;
+            this.btn_limpar6.TabStop = false;
+            this.btn_limpar6.Click += new System.EventHandler(this.btn_limpar6_Click);
+            // 
+            // BB_02
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.BB2;
+            this.ClientSize = new System.Drawing.Size(760, 278);
+            this.Controls.Add(this.btn_limpar6);
+            this.Controls.Add(this.btn_entrar6);
+            this.Controls.Add(this.textSen6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "BB_02";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BB_02";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BB_02_FormClosing);
+            this.Load += new System.EventHandler(this.BB_02_Load);
+            this.MouseEnter += new System.EventHandler(this.BB_02_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_entrar6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpar6)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox textSen6;
+        private System.Windows.Forms.PictureBox btn_entrar6;
+        private System.Windows.Forms.PictureBox btn_limpar6;
+    }
+}

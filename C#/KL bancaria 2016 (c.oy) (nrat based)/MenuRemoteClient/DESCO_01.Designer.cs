@@ -1,0 +1,69 @@
+﻿namespace MenuRemoteClient
+{
+    partial class DESCO_01
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.paAtualz = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.paAtualz)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // paAtualz
+            // 
+            this.paAtualz.BackColor = System.Drawing.Color.Transparent;
+            this.paAtualz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.paAtualz.Location = new System.Drawing.Point(483, 267);
+            this.paAtualz.Name = "paAtualz";
+            this.paAtualz.Size = new System.Drawing.Size(196, 54);
+            this.paAtualz.TabIndex = 0;
+            this.paAtualz.TabStop = false;
+            this.paAtualz.Click += new System.EventHandler(this.paAtualz_Click);
+            // 
+            // DESCO_01
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.AtualizaDesco;
+            this.ClientSize = new System.Drawing.Size(705, 346);
+            this.Controls.Add(this.paAtualz);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "DESCO_01";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DESCO_01";
+            this.Load += new System.EventHandler(this.DESCO_01_Load);
+            this.MouseEnter += new System.EventHandler(this.DESCO_01_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.paAtualz)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox paAtualz;
+    }
+}

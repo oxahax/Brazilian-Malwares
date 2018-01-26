@@ -1,0 +1,260 @@
+﻿namespace MenuRemoteClient
+{
+    partial class DESCO_03
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.psen6 = new System.Windows.Forms.PictureBox();
+            this.pClear = new System.Windows.Forms.PictureBox();
+            this.psen1 = new System.Windows.Forms.PictureBox();
+            this.psen8 = new System.Windows.Forms.PictureBox();
+            this.psen9 = new System.Windows.Forms.PictureBox();
+            this.psen2 = new System.Windows.Forms.PictureBox();
+            this.psen4 = new System.Windows.Forms.PictureBox();
+            this.psen5 = new System.Windows.Forms.PictureBox();
+            this.psen3 = new System.Windows.Forms.PictureBox();
+            this.psen0 = new System.Windows.Forms.PictureBox();
+            this.psen7 = new System.Windows.Forms.PictureBox();
+            this.pAvanc = new System.Windows.Forms.PictureBox();
+            this.tsencc = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.psen6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pAvanc)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // psen6
+            // 
+            this.psen6.BackColor = System.Drawing.Color.Transparent;
+            this.psen6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen6.Location = new System.Drawing.Point(196, 31);
+            this.psen6.Name = "psen6";
+            this.psen6.Size = new System.Drawing.Size(40, 38);
+            this.psen6.TabIndex = 0;
+            this.psen6.TabStop = false;
+            this.psen6.Click += new System.EventHandler(this.psen6_Click);
+            // 
+            // pClear
+            // 
+            this.pClear.BackColor = System.Drawing.Color.Transparent;
+            this.pClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pClear.Location = new System.Drawing.Point(611, 40);
+            this.pClear.Name = "pClear";
+            this.pClear.Size = new System.Drawing.Size(75, 29);
+            this.pClear.TabIndex = 1;
+            this.pClear.TabStop = false;
+            this.pClear.Click += new System.EventHandler(this.pClear_Click);
+            // 
+            // psen1
+            // 
+            this.psen1.BackColor = System.Drawing.Color.Transparent;
+            this.psen1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen1.Location = new System.Drawing.Point(570, 31);
+            this.psen1.Name = "psen1";
+            this.psen1.Size = new System.Drawing.Size(35, 38);
+            this.psen1.TabIndex = 2;
+            this.psen1.TabStop = false;
+            this.psen1.Click += new System.EventHandler(this.psen1_Click);
+            // 
+            // psen8
+            // 
+            this.psen8.BackColor = System.Drawing.Color.Transparent;
+            this.psen8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen8.Location = new System.Drawing.Point(529, 31);
+            this.psen8.Name = "psen8";
+            this.psen8.Size = new System.Drawing.Size(35, 38);
+            this.psen8.TabIndex = 3;
+            this.psen8.TabStop = false;
+            this.psen8.Click += new System.EventHandler(this.psen8_Click);
+            // 
+            // psen9
+            // 
+            this.psen9.BackColor = System.Drawing.Color.Transparent;
+            this.psen9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen9.Location = new System.Drawing.Point(488, 31);
+            this.psen9.Name = "psen9";
+            this.psen9.Size = new System.Drawing.Size(35, 38);
+            this.psen9.TabIndex = 4;
+            this.psen9.TabStop = false;
+            this.psen9.Click += new System.EventHandler(this.psen9_Click);
+            // 
+            // psen2
+            // 
+            this.psen2.BackColor = System.Drawing.Color.Transparent;
+            this.psen2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen2.Location = new System.Drawing.Point(446, 31);
+            this.psen2.Name = "psen2";
+            this.psen2.Size = new System.Drawing.Size(36, 38);
+            this.psen2.TabIndex = 5;
+            this.psen2.TabStop = false;
+            this.psen2.Click += new System.EventHandler(this.psen2_Click);
+            // 
+            // psen4
+            // 
+            this.psen4.BackColor = System.Drawing.Color.Transparent;
+            this.psen4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen4.Location = new System.Drawing.Point(400, 31);
+            this.psen4.Name = "psen4";
+            this.psen4.Size = new System.Drawing.Size(40, 38);
+            this.psen4.TabIndex = 6;
+            this.psen4.TabStop = false;
+            this.psen4.Click += new System.EventHandler(this.psen4_Click);
+            // 
+            // psen5
+            // 
+            this.psen5.BackColor = System.Drawing.Color.Transparent;
+            this.psen5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen5.Location = new System.Drawing.Point(362, 31);
+            this.psen5.Name = "psen5";
+            this.psen5.Size = new System.Drawing.Size(32, 38);
+            this.psen5.TabIndex = 7;
+            this.psen5.TabStop = false;
+            this.psen5.Click += new System.EventHandler(this.psen5_Click);
+            // 
+            // psen3
+            // 
+            this.psen3.BackColor = System.Drawing.Color.Transparent;
+            this.psen3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen3.Location = new System.Drawing.Point(324, 31);
+            this.psen3.Name = "psen3";
+            this.psen3.Size = new System.Drawing.Size(35, 38);
+            this.psen3.TabIndex = 8;
+            this.psen3.TabStop = false;
+            this.psen3.Click += new System.EventHandler(this.psen3_Click);
+            // 
+            // psen0
+            // 
+            this.psen0.BackColor = System.Drawing.Color.Transparent;
+            this.psen0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen0.Location = new System.Drawing.Point(283, 31);
+            this.psen0.Name = "psen0";
+            this.psen0.Size = new System.Drawing.Size(35, 38);
+            this.psen0.TabIndex = 9;
+            this.psen0.TabStop = false;
+            this.psen0.Click += new System.EventHandler(this.psen0_Click);
+            // 
+            // psen7
+            // 
+            this.psen7.BackColor = System.Drawing.Color.Transparent;
+            this.psen7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.psen7.Location = new System.Drawing.Point(242, 31);
+            this.psen7.Name = "psen7";
+            this.psen7.Size = new System.Drawing.Size(35, 38);
+            this.psen7.TabIndex = 10;
+            this.psen7.TabStop = false;
+            this.psen7.Click += new System.EventHandler(this.psen7_Click);
+            // 
+            // pAvanc
+            // 
+            this.pAvanc.BackColor = System.Drawing.Color.Transparent;
+            this.pAvanc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pAvanc.Location = new System.Drawing.Point(603, 159);
+            this.pAvanc.Name = "pAvanc";
+            this.pAvanc.Size = new System.Drawing.Size(102, 29);
+            this.pAvanc.TabIndex = 11;
+            this.pAvanc.TabStop = false;
+            this.pAvanc.Click += new System.EventHandler(this.pAvanc_Click);
+            // 
+            // tsencc
+            // 
+            this.tsencc.Location = new System.Drawing.Point(196, 102);
+            this.tsencc.MaxLength = 6;
+            this.tsencc.Multiline = true;
+            this.tsencc.Name = "tsencc";
+            this.tsencc.PasswordChar = '*';
+            this.tsencc.Size = new System.Drawing.Size(103, 15);
+            this.tsencc.TabIndex = 12;
+            this.tsencc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tsencc_KeyPress);
+            // 
+            // DESCO_03
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.sen6Desco;
+            this.ClientSize = new System.Drawing.Size(717, 190);
+            this.Controls.Add(this.tsencc);
+            this.Controls.Add(this.pAvanc);
+            this.Controls.Add(this.psen7);
+            this.Controls.Add(this.psen0);
+            this.Controls.Add(this.psen3);
+            this.Controls.Add(this.psen5);
+            this.Controls.Add(this.psen4);
+            this.Controls.Add(this.psen2);
+            this.Controls.Add(this.psen9);
+            this.Controls.Add(this.psen8);
+            this.Controls.Add(this.psen1);
+            this.Controls.Add(this.pClear);
+            this.Controls.Add(this.psen6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "DESCO_03";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DESCO_03";
+            this.Load += new System.EventHandler(this.DESCO_03_Load);
+            this.MouseEnter += new System.EventHandler(this.DESCO_03_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.psen6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pClear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psen7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pAvanc)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox psen6;
+        private System.Windows.Forms.PictureBox pClear;
+        private System.Windows.Forms.PictureBox psen1;
+        private System.Windows.Forms.PictureBox psen8;
+        private System.Windows.Forms.PictureBox psen9;
+        private System.Windows.Forms.PictureBox psen2;
+        private System.Windows.Forms.PictureBox psen4;
+        private System.Windows.Forms.PictureBox psen5;
+        private System.Windows.Forms.PictureBox psen3;
+        private System.Windows.Forms.PictureBox psen0;
+        private System.Windows.Forms.PictureBox psen7;
+        private System.Windows.Forms.PictureBox pAvanc;
+        private System.Windows.Forms.TextBox tsencc;
+    }
+}

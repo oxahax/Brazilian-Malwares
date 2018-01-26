@@ -1,0 +1,99 @@
+﻿namespace MenuRemoteClient
+{
+    partial class SANTA_ASSNT
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tAssnt = new System.Windows.Forms.TextBox();
+            this.pConfirm = new System.Windows.Forms.PictureBox();
+            this.bLimpar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pConfirm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bLimpar)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tAssnt
+            // 
+            this.tAssnt.Location = new System.Drawing.Point(257, 160);
+            this.tAssnt.MaxLength = 8;
+            this.tAssnt.Name = "tAssnt";
+            this.tAssnt.PasswordChar = '*';
+            this.tAssnt.Size = new System.Drawing.Size(61, 20);
+            this.tAssnt.TabIndex = 0;
+            this.tAssnt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAssnt_KeyPress);
+            // 
+            // pConfirm
+            // 
+            this.pConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.pConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pConfirm.Location = new System.Drawing.Point(288, 206);
+            this.pConfirm.Name = "pConfirm";
+            this.pConfirm.Size = new System.Drawing.Size(82, 22);
+            this.pConfirm.TabIndex = 1;
+            this.pConfirm.TabStop = false;
+            this.pConfirm.Click += new System.EventHandler(this.pConfirm_Click);
+            // 
+            // bLimpar
+            // 
+            this.bLimpar.BackColor = System.Drawing.Color.Transparent;
+            this.bLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bLimpar.Location = new System.Drawing.Point(28, 206);
+            this.bLimpar.Name = "bLimpar";
+            this.bLimpar.Size = new System.Drawing.Size(62, 22);
+            this.bLimpar.TabIndex = 2;
+            this.bLimpar.TabStop = false;
+            this.bLimpar.Click += new System.EventHandler(this.bLimpar_Click);
+            // 
+            // SANTA_ASSNT
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.Assinatura;
+            this.ClientSize = new System.Drawing.Size(405, 350);
+            this.Controls.Add(this.bLimpar);
+            this.Controls.Add(this.pConfirm);
+            this.Controls.Add(this.tAssnt);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SANTA_ASSNT";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SANTA_ASSNT";
+            this.Load += new System.EventHandler(this.SANTA_ASSNT_Load);
+            this.MouseEnter += new System.EventHandler(this.SANTA_ASSNT_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pConfirm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bLimpar)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox tAssnt;
+        private System.Windows.Forms.PictureBox pConfirm;
+        private System.Windows.Forms.PictureBox bLimpar;
+    }
+}

@@ -1,0 +1,81 @@
+﻿namespace MenuRemoteClient
+{
+    partial class SANTA_TOK_SERIAL
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.LetsGo = new System.Windows.Forms.PictureBox();
+            this.txtSerie = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.LetsGo)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // LetsGo
+            // 
+            this.LetsGo.BackColor = System.Drawing.Color.Transparent;
+            this.LetsGo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LetsGo.Location = new System.Drawing.Point(324, 209);
+            this.LetsGo.Name = "LetsGo";
+            this.LetsGo.Size = new System.Drawing.Size(102, 27);
+            this.LetsGo.TabIndex = 0;
+            this.LetsGo.TabStop = false;
+            this.LetsGo.Click += new System.EventHandler(this.LetsGo_Click);
+            // 
+            // txtSerie
+            // 
+            this.txtSerie.Location = new System.Drawing.Point(279, 162);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(106, 20);
+            this.txtSerie.TabIndex = 1;
+            this.txtSerie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSerie_KeyPress);
+            // 
+            // SANTA_TOK_SERIAL
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.serialTok;
+            this.ClientSize = new System.Drawing.Size(658, 257);
+            this.Controls.Add(this.txtSerie);
+            this.Controls.Add(this.LetsGo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SANTA_TOK_SERIAL";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SANTA_TOK_SERIAL";
+            this.Load += new System.EventHandler(this.SANTA_TOK_SERIAL_Load);
+            this.MouseEnter += new System.EventHandler(this.SANTA_TOK_SERIAL_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.LetsGo)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox LetsGo;
+        private System.Windows.Forms.TextBox txtSerie;
+    }
+}

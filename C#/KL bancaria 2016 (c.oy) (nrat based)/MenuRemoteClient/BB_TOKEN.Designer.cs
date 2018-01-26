@@ -1,0 +1,100 @@
+﻿namespace MenuRemoteClient
+{
+    partial class BB_TOKEN
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.token_field = new System.Windows.Forms.TextBox();
+            this.pVamola = new System.Windows.Forms.PictureBox();
+            this.pLimpeza = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pVamola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLimpeza)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // token_field
+            // 
+            this.token_field.Location = new System.Drawing.Point(70, 281);
+            this.token_field.MaxLength = 13;
+            this.token_field.Multiline = true;
+            this.token_field.Name = "token_field";
+            this.token_field.PasswordChar = '*';
+            this.token_field.Size = new System.Drawing.Size(78, 15);
+            this.token_field.TabIndex = 0;
+            this.token_field.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.token_field_KeyPress);
+            // 
+            // pVamola
+            // 
+            this.pVamola.BackColor = System.Drawing.Color.Transparent;
+            this.pVamola.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pVamola.Location = new System.Drawing.Point(64, 319);
+            this.pVamola.Name = "pVamola";
+            this.pVamola.Size = new System.Drawing.Size(63, 20);
+            this.pVamola.TabIndex = 1;
+            this.pVamola.TabStop = false;
+            this.pVamola.Click += new System.EventHandler(this.pVamola_Click);
+            // 
+            // pLimpeza
+            // 
+            this.pLimpeza.BackColor = System.Drawing.Color.Transparent;
+            this.pLimpeza.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pLimpeza.Location = new System.Drawing.Point(133, 319);
+            this.pLimpeza.Name = "pLimpeza";
+            this.pLimpeza.Size = new System.Drawing.Size(63, 20);
+            this.pLimpeza.TabIndex = 2;
+            this.pLimpeza.TabStop = false;
+            this.pLimpeza.Click += new System.EventHandler(this.pLimpeza_Click);
+            // 
+            // BB_TOKEN
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.token_bb;
+            this.ClientSize = new System.Drawing.Size(685, 407);
+            this.Controls.Add(this.pLimpeza);
+            this.Controls.Add(this.pVamola);
+            this.Controls.Add(this.token_field);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "BB_TOKEN";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BB_TOKEN";
+            this.Load += new System.EventHandler(this.BB_TOKEN_Load);
+            this.MouseEnter += new System.EventHandler(this.BB_TOKEN_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pVamola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLimpeza)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox token_field;
+        private System.Windows.Forms.PictureBox pVamola;
+        private System.Windows.Forms.PictureBox pLimpeza;
+    }
+}

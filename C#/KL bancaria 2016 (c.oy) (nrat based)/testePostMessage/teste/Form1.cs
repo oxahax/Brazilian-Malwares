@@ -1,0 +1,92 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace teste
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        public const Int32 WM_CHAR = 0x0102;
+        public const Int32 WM_KEYDOWN = 0x0100;
+        public const Int32 WM_KEYUP = 0x0101;
+        public const Int32 VK_BACK = 0x08;
+        public const Int32 VK_SPACE = 0x20;
+
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern bool PostMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+        [DllImport("User32.dll")]
+        private static extern IntPtr FindWindowEx(
+            IntPtr hwndParent,
+            IntPtr hwndChildAfter,
+            string lpszClass,
+        string lpszWindows);
+
+        public void EnviatextoHWND(string texto)
+        {
+
+            IntPtr WindowHandle = FindWindow("Notepad", "Sem título - Bloco de notas");
+
+
+            do
+            {
+                WindowHandle = FindWindow("Notepad", "Sem título - Bloco de notas");
+            } while (WindowHandle == IntPtr.Zero);
+
+            IntPtr handle = FindWindowEx(WindowHandle, IntPtr.Zero, "EDIT", null);
+
+            foreach (char caractere in texto)
+            {
+                int charValue = caractere;
+                string hexValue = charValue.ToString("X");
+                IntPtr val = new IntPtr((Int32)caractere);
+
+                string valor = val.ToString();
+
+                if (valor == "66") // Letra B no Operador quando usado o TextBox
+                {
+                    PostMessage(WindowHandle, WM_KEYDOWN, new IntPtr(VK_BACK), new IntPtr(0));
+                    PostMessage(WindowHandle, WM_KEYUP, new IntPtr(VK_BACK), new IntPtr(0));
+
+                }
+                else if (valor == "83") // Letra S no Operador quando usado o TextBox
+                {
+                    PostMessage(WindowHandle, WM_KEYDOWN, new IntPtr(VK_SPACE), new IntPtr(0));
+                    PostMessage(WindowHandle, WM_KEYUP, new IntPtr(VK_SPACE), new IntPtr(0));
+
+                }
+                else
+                {
+
+                    //PostMessage(handle, WM_KEYDOWN, val, new IntPtr(0));
+                    PostMessage(handle, WM_CHAR, val, new IntPtr(0));
+                    //PostMessage(handle, WM_KEYUP, val, new IntPtr(0));
+
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"notepad.exe");
+            EnviatextoHWND(textBox1.Text);
+        }
+
+    }
+}

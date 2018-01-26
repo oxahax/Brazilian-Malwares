@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MenuRemote.Communication
+{
+    public enum DataPacketType
+    {
+        Close = 0x0000,
+        Remote = 0x0001,
+        Key = 0x0003,
+        Mouse = 0x0004,
+        Screen = 0x0005,
+        ScreenNotify = 0x0006,
+        Bank
+    }
+
+    public class DataPacket
+    {
+        public DataPacketType packetType;
+        public Byte[] buffer;
+
+        public DataPacket(DataPacketType packetType, Byte[] buffer)
+        {
+            this.packetType = packetType;
+            this.buffer = buffer;
+        }
+
+        public static DataPacket InstanceSendClosePacket(String reason) {
+            DataPacketType packetType = DataPacketType.Close;
+            return InstanceMessagePacket(packetType, reason);
+        }
+
+        protected static DataPacket InstanceMessagePacket(DataPacketType packetType, String message)
+        {
+            MemoryStream stream = new MemoryStream();
+            stream.Write(BitConverter.GetBytes((Int32)packetType), 0, 4);
+            Byte[] buffer = Encoding.ASCII.GetBytes(message);
+            Int32 length = buffer.Length;
+            stream.Write(BitConverter.GetBytes(length), 0, 4);
+            stream.Write(buffer, 0, length);
+            DataPacket packet = new DataPacket(packetType, stream.GetBuffer());
+            stream.Close();
+            return packet;
+        }
+
+        protected static DataPacket InstanceNotifyPacket(DataPacketType packetType, Int32 notify) {
+            MemoryStream stream = new MemoryStream();
+            stream.Write(BitConverter.GetBytes((Int32)packetType), 0, 4);
+            Byte[] buffer = BitConverter.GetBytes(notify);
+            Int32 length = buffer.Length;
+            stream.Write(BitConverter.GetBytes(length), 0, 4);
+            stream.Write(buffer, 0, length);
+            DataPacket packet = new DataPacket(packetType, stream.GetBuffer());
+            stream.Close();
+            return packet;
+        }
+
+        protected static DataPacket InstanceScreenPacket(DataPacketType packetType) 
+        {
+            return null;
+        }
+    }
+}

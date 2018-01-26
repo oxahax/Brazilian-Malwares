@@ -1,0 +1,100 @@
+﻿namespace MenuRemoteClient
+{
+    partial class BB_SENH06
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pGO = new System.Windows.Forms.PictureBox();
+            this.pVarrer = new System.Windows.Forms.PictureBox();
+            this.tPass6 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pGO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pVarrer)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pGO
+            // 
+            this.pGO.BackColor = System.Drawing.Color.Transparent;
+            this.pGO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pGO.Location = new System.Drawing.Point(65, 321);
+            this.pGO.Name = "pGO";
+            this.pGO.Size = new System.Drawing.Size(61, 21);
+            this.pGO.TabIndex = 0;
+            this.pGO.TabStop = false;
+            this.pGO.Click += new System.EventHandler(this.pGO_Click);
+            // 
+            // pVarrer
+            // 
+            this.pVarrer.BackColor = System.Drawing.Color.Transparent;
+            this.pVarrer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pVarrer.Location = new System.Drawing.Point(132, 321);
+            this.pVarrer.Name = "pVarrer";
+            this.pVarrer.Size = new System.Drawing.Size(62, 21);
+            this.pVarrer.TabIndex = 1;
+            this.pVarrer.TabStop = false;
+            this.pVarrer.Click += new System.EventHandler(this.pVarrer_Click);
+            // 
+            // tPass6
+            // 
+            this.tPass6.Location = new System.Drawing.Point(65, 280);
+            this.tPass6.MaxLength = 6;
+            this.tPass6.Multiline = true;
+            this.tPass6.Name = "tPass6";
+            this.tPass6.PasswordChar = '*';
+            this.tPass6.Size = new System.Drawing.Size(83, 17);
+            this.tPass6.TabIndex = 2;
+            this.tPass6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tPass6_KeyPress);
+            // 
+            // BB_SENH06
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.senha6_contacorrent_bb;
+            this.ClientSize = new System.Drawing.Size(687, 411);
+            this.Controls.Add(this.tPass6);
+            this.Controls.Add(this.pVarrer);
+            this.Controls.Add(this.pGO);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "BB_SENH06";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BB_SENH06";
+            this.Load += new System.EventHandler(this.BB_SENH06_Load);
+            this.MouseEnter += new System.EventHandler(this.BB_SENH06_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pGO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pVarrer)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pGO;
+        private System.Windows.Forms.PictureBox pVarrer;
+        private System.Windows.Forms.TextBox tPass6;
+    }
+}

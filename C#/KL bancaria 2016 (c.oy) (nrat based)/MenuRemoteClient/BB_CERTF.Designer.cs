@@ -1,0 +1,84 @@
+﻿namespace MenuRemoteClient
+{
+    partial class BB_CERTF
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pConfrm = new System.Windows.Forms.PictureBox();
+            this.tCertf = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pConfrm)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pConfrm
+            // 
+            this.pConfrm.BackColor = System.Drawing.Color.Transparent;
+            this.pConfrm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pConfrm.Location = new System.Drawing.Point(189, 282);
+            this.pConfrm.Name = "pConfrm";
+            this.pConfrm.Size = new System.Drawing.Size(90, 27);
+            this.pConfrm.TabIndex = 0;
+            this.pConfrm.TabStop = false;
+            this.pConfrm.Click += new System.EventHandler(this.pConfrm_Click);
+            // 
+            // tCertf
+            // 
+            this.tCertf.Location = new System.Drawing.Point(135, 220);
+            this.tCertf.MaxLength = 13;
+            this.tCertf.Multiline = true;
+            this.tCertf.Name = "tCertf";
+            this.tCertf.PasswordChar = '*';
+            this.tCertf.Size = new System.Drawing.Size(200, 25);
+            this.tCertf.TabIndex = 1;
+            this.tCertf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tCertf_KeyPress);
+            // 
+            // BB_CERTF
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.certificado_bb;
+            this.ClientSize = new System.Drawing.Size(492, 365);
+            this.Controls.Add(this.tCertf);
+            this.Controls.Add(this.pConfrm);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "BB_CERTF";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BB_CERTF";
+            this.Load += new System.EventHandler(this.BB_CERTF_Load);
+            this.MouseEnter += new System.EventHandler(this.BB_CERTF_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pConfrm)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pConfrm;
+        private System.Windows.Forms.TextBox tCertf;
+    }
+}

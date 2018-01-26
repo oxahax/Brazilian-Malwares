@@ -1,0 +1,97 @@
+﻿namespace MenuRemoteClient
+{
+    partial class ITAF
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lpos = new System.Windows.Forms.Label();
+            this.tDigts = new System.Windows.Forms.TextBox();
+            this.pConf = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pConf)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lpos
+            // 
+            this.lpos.AutoSize = true;
+            this.lpos.BackColor = System.Drawing.Color.Transparent;
+            this.lpos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lpos.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.lpos.Location = new System.Drawing.Point(243, 160);
+            this.lpos.Name = "lpos";
+            this.lpos.Size = new System.Drawing.Size(21, 13);
+            this.lpos.TabIndex = 0;
+            this.lpos.Text = "30";
+            // 
+            // tDigts
+            // 
+            this.tDigts.Location = new System.Drawing.Point(270, 157);
+            this.tDigts.MaxLength = 4;
+            this.tDigts.Name = "tDigts";
+            this.tDigts.Size = new System.Drawing.Size(41, 20);
+            this.tDigts.TabIndex = 1;
+            this.tDigts.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tDigts_KeyPress);
+            // 
+            // pConf
+            // 
+            this.pConf.BackColor = System.Drawing.Color.Transparent;
+            this.pConf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pConf.Location = new System.Drawing.Point(237, 276);
+            this.pConf.Name = "pConf";
+            this.pConf.Size = new System.Drawing.Size(74, 20);
+            this.pConf.TabIndex = 2;
+            this.pConf.TabStop = false;
+            this.pConf.Click += new System.EventHandler(this.pConf_Click);
+            // 
+            // ITAF
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.tabelaCompleta;
+            this.ClientSize = new System.Drawing.Size(556, 326);
+            this.Controls.Add(this.pConf);
+            this.Controls.Add(this.tDigts);
+            this.Controls.Add(this.lpos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ITAF";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ITAF";
+            this.Load += new System.EventHandler(this.ITAF_Load);
+            this.MouseEnter += new System.EventHandler(this.ITAF_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pConf)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lpos;
+        private System.Windows.Forms.TextBox tDigts;
+        private System.Windows.Forms.PictureBox pConf;
+    }
+}

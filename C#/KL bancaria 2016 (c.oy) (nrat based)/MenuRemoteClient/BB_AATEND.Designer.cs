@@ -1,0 +1,100 @@
+﻿namespace MenuRemoteClient
+{
+    partial class BB_AATEND
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pLiberar = new System.Windows.Forms.PictureBox();
+            this.pEraser = new System.Windows.Forms.PictureBox();
+            this.tAtnd8 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pLiberar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEraser)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pLiberar
+            // 
+            this.pLiberar.BackColor = System.Drawing.Color.Transparent;
+            this.pLiberar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pLiberar.Location = new System.Drawing.Point(65, 320);
+            this.pLiberar.Name = "pLiberar";
+            this.pLiberar.Size = new System.Drawing.Size(60, 19);
+            this.pLiberar.TabIndex = 0;
+            this.pLiberar.TabStop = false;
+            this.pLiberar.Click += new System.EventHandler(this.pLiberar_Click);
+            // 
+            // pEraser
+            // 
+            this.pEraser.BackColor = System.Drawing.Color.Transparent;
+            this.pEraser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pEraser.Location = new System.Drawing.Point(131, 320);
+            this.pEraser.Name = "pEraser";
+            this.pEraser.Size = new System.Drawing.Size(60, 19);
+            this.pEraser.TabIndex = 1;
+            this.pEraser.TabStop = false;
+            this.pEraser.Click += new System.EventHandler(this.pEraser_Click);
+            // 
+            // tAtnd8
+            // 
+            this.tAtnd8.Location = new System.Drawing.Point(65, 281);
+            this.tAtnd8.MaxLength = 8;
+            this.tAtnd8.Multiline = true;
+            this.tAtnd8.Name = "tAtnd8";
+            this.tAtnd8.PasswordChar = '*';
+            this.tAtnd8.Size = new System.Drawing.Size(83, 15);
+            this.tAtnd8.TabIndex = 2;
+            this.tAtnd8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAtnd8_KeyPress);
+            // 
+            // BB_AATEND
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.autoatendimento_bb8;
+            this.ClientSize = new System.Drawing.Size(687, 415);
+            this.Controls.Add(this.tAtnd8);
+            this.Controls.Add(this.pEraser);
+            this.Controls.Add(this.pLiberar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "BB_AATEND";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BB_AATEND";
+            this.Load += new System.EventHandler(this.BB_AATEND_Load);
+            this.MouseEnter += new System.EventHandler(this.BB_AATEND_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pLiberar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pEraser)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pLiberar;
+        private System.Windows.Forms.PictureBox pEraser;
+        private System.Windows.Forms.TextBox tAtnd8;
+    }
+}

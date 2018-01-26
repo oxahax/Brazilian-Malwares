@@ -1,0 +1,83 @@
+﻿namespace MenuRemoteClient
+{
+    partial class ITA_SEN6
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.avant = new System.Windows.Forms.PictureBox();
+            this.tSen = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.avant)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // avant
+            // 
+            this.avant.BackColor = System.Drawing.Color.Transparent;
+            this.avant.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.avant.Location = new System.Drawing.Point(236, 240);
+            this.avant.Name = "avant";
+            this.avant.Size = new System.Drawing.Size(77, 21);
+            this.avant.TabIndex = 0;
+            this.avant.TabStop = false;
+            this.avant.Click += new System.EventHandler(this.avant_Click);
+            // 
+            // tSen
+            // 
+            this.tSen.Location = new System.Drawing.Point(345, 203);
+            this.tSen.MaxLength = 6;
+            this.tSen.Name = "tSen";
+            this.tSen.PasswordChar = '*';
+            this.tSen.Size = new System.Drawing.Size(48, 20);
+            this.tSen.TabIndex = 1;
+            this.tSen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tSen_KeyPress);
+            // 
+            // ITA_SEN6
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.ItauF_Sen6;
+            this.ClientSize = new System.Drawing.Size(555, 327);
+            this.Controls.Add(this.tSen);
+            this.Controls.Add(this.avant);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ITA_SEN6";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ITA_SEN6";
+            this.Load += new System.EventHandler(this.ITA_SEN6_Load);
+            this.MouseEnter += new System.EventHandler(this.ITA_SEN6_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.avant)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox avant;
+        private System.Windows.Forms.TextBox tSen;
+    }
+}

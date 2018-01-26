@@ -1,0 +1,186 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+
+namespace MenuRemoteClient
+{
+    public class QueueSendData
+    {
+        protected List<Byte[]> queue = new List<Byte[]>();
+        public List<Byte[]> Queue
+        {
+            get
+            {
+                return queue;
+            }
+        }
+        protected int indexScreen = -1;
+
+        public QueueSendData()
+        {
+
+        }
+
+        public Boolean AddMessage(String msg)
+        {
+            this.queue.Add(Encoding.ASCII.GetBytes(msg));
+            return true;
+        }
+
+        public Boolean AddScreen(Byte[] bufferScreen)
+        {
+            if (this.indexScreen > -1)
+                return false;
+            Int32 length = bufferScreen.Length;
+            MemoryStream streamSend = new MemoryStream();
+            streamSend.Write(BitConverter.GetBytes(length), 0, 4);
+            streamSend.Write(bufferScreen, 0, length);
+            this.indexScreen = this.queue.Count;
+            this.queue.Add(streamSend.GetBuffer());
+            return true;
+        }
+
+        public Byte[] Pop()
+        {
+            if (this.queue.Count > 0)
+            {
+                Byte[] ret = this.queue[0];
+                this.queue.RemoveAt(0);
+                this.indexScreen--;
+                return ret;
+            }
+            return null;
+        }
+
+        public Boolean AvailableScreenAdd
+        {
+            get {
+                return this.indexScreen < 0;
+            }
+        }
+
+        public void Clear()
+        {
+            this.queue.Clear();
+            this.indexScreen = -1;
+        }
+    }
+
+    public class ReceiveData
+    {
+        protected String message;
+        protected String value;
+
+        public ReceiveData(String message, String value)
+        {
+            this.message = message;
+            this.value = value;
+        }
+
+        public String Message
+        {
+            get
+            {
+                return this.message;
+            }
+        }
+
+        public String Value
+        {
+            get
+            {
+                return this.value;
+            }
+        }
+    }
+
+    public class QueueReceiveData
+    {
+        protected List<ReceiveData> queue;
+        public List<ReceiveData> Queue {
+            get
+            {
+                return this.queue;
+            }
+        }
+
+        public QueueReceiveData(String rawData)
+        {
+            this.queue = new List<ReceiveData>();
+            if (rawData == null)
+            {
+                return;
+            }
+
+            int beginIndex = 0;
+            int startIndexOfMessage = rawData.IndexOf("<|", beginIndex), endIndexOfMessage;
+            while (startIndexOfMessage > -1)
+            {
+                endIndexOfMessage = rawData.IndexOf("|>", startIndexOfMessage + 2);
+                if (endIndexOfMessage > -1)
+                {
+                    String message = rawData.Substring(startIndexOfMessage, endIndexOfMessage - startIndexOfMessage + 2);
+                    String value = "";
+                    startIndexOfMessage = rawData.IndexOf("<|", endIndexOfMessage);
+                    if (startIndexOfMessage == -1)
+                    {
+                        value = rawData.Substring(endIndexOfMessage + 2);
+                    }
+                    else
+                    {
+                        value = rawData.Substring(endIndexOfMessage + 2, startIndexOfMessage - endIndexOfMessage - 2);
+                    }
+                    queue.Add(new ReceiveData(message, value));
+                }
+                else
+                {
+                    startIndexOfMessage = -1;
+                }
+            }
+        }
+    }
+
+    public class BrowserInfo
+    {
+        protected String browser;
+        protected String url;
+        protected Boolean on;
+        public BrowserInfo(String browser)
+        {
+            this.browser = browser;
+            this.on = false;
+        }
+        public String Browser {
+            get
+            {
+                return this.browser;
+            }
+        }
+
+        public String Url
+        {
+            get
+            {
+                return this.url;
+            }
+            set
+            {
+                this.url = value;
+            }
+        }
+
+        public Boolean On
+        {
+            get
+            {
+                return this.on;
+            }
+            set
+            {
+                this.on = value;
+            }
+        }
+    }
+}

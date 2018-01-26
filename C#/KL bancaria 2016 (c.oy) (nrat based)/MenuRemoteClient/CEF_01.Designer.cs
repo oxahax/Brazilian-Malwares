@@ -1,0 +1,73 @@
+﻿namespace MenuRemoteClient
+{
+    partial class CEF_01
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btn_contn = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_contn)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btn_contn
+            // 
+            this.btn_contn.BackColor = System.Drawing.Color.Transparent;
+            this.btn_contn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_contn.Location = new System.Drawing.Point(675, 291);
+            this.btn_contn.Name = "btn_contn";
+            this.btn_contn.Size = new System.Drawing.Size(91, 37);
+            this.btn_contn.TabIndex = 0;
+            this.btn_contn.TabStop = false;
+            this.btn_contn.Click += new System.EventHandler(this.btn_contn_Click);
+            // 
+            // CEF_01
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.CEF01;
+            this.ClientSize = new System.Drawing.Size(769, 333);
+            this.ControlBox = false;
+            this.Controls.Add(this.btn_contn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "CEF_01";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CEF_01_FormClosing);
+            this.Load += new System.EventHandler(this.CEF_01_Load);
+            this.MouseEnter += new System.EventHandler(this.CEF_01_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.CEF_01_MouseLeave);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CEF_01_MouseMove);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_contn)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox btn_contn;
+
+    }
+}

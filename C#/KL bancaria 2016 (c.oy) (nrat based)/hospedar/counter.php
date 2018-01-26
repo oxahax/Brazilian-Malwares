@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::: CONTADOR DE ACESSOS :::</title>
+</head>
+
+<body>
+
+<?php
+
+$username = $_GET["username"];
+// Esta variavel será usada para que caso o usuario ja exista ela receba outro valor, assim nao cadastrará o IP novamente
+		$existe = 0;
+		$i;
+$arq = "visits.txt";
+// Abre ou cria o arquivo visitas.txt
+// "a" representa que o arquivo é aberto para ser escrito
+$fp = fopen($arq, "a");
+
+// Inserimos cada linha do arquivo num array
+$file = file($arq);
+
+$total = count($file);
+
+// Realizamos o loop para comparar com cada linha do arquivo se o usuario ja existe
+		for ($i=0;$i<$total;$i++){	
+		// Se existir a variavel $existe terá o valor 1				
+			if ($file[$i] == $username) $existe = 1; } 
+ 
+// Escreve "o nome do usuário da máquina local" no visitas.txt
+$escreve = fwrite($fp, $i."º - ".$username ."\r\n");
+ 
+ // Caso $existe seja igual a 0 gravará o nome do usuario
+			if ($existe == 0)  $i++; $escreve; 
+ 
+// Fecha o arquivo
+fclose($fp); 
+
+//echo($_SERVER['HTTP_USER_AGENT']); 
+
+
+?>
+
+</body>
+</html>

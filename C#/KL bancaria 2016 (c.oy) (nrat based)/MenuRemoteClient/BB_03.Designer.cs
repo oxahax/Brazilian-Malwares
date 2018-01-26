@@ -1,0 +1,113 @@
+﻿namespace MenuRemoteClient
+{
+    partial class BB_03
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pGF_entrar = new System.Windows.Forms.PictureBox();
+            this.pGF_limpar = new System.Windows.Forms.PictureBox();
+            this.textGF_chave = new System.Windows.Forms.TextBox();
+            this.textGF_senha = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pGF_entrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pGF_limpar)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pGF_entrar
+            // 
+            this.pGF_entrar.BackColor = System.Drawing.Color.Transparent;
+            this.pGF_entrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pGF_entrar.Location = new System.Drawing.Point(28, 179);
+            this.pGF_entrar.Name = "pGF_entrar";
+            this.pGF_entrar.Size = new System.Drawing.Size(65, 18);
+            this.pGF_entrar.TabIndex = 0;
+            this.pGF_entrar.TabStop = false;
+            this.pGF_entrar.Click += new System.EventHandler(this.pGF_entrar_Click);
+            // 
+            // pGF_limpar
+            // 
+            this.pGF_limpar.BackColor = System.Drawing.Color.Transparent;
+            this.pGF_limpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pGF_limpar.Location = new System.Drawing.Point(99, 179);
+            this.pGF_limpar.Name = "pGF_limpar";
+            this.pGF_limpar.Size = new System.Drawing.Size(66, 18);
+            this.pGF_limpar.TabIndex = 1;
+            this.pGF_limpar.TabStop = false;
+            this.pGF_limpar.Click += new System.EventHandler(this.pGF_limpar_Click);
+            // 
+            // textGF_chave
+            // 
+            this.textGF_chave.Location = new System.Drawing.Point(28, 91);
+            this.textGF_chave.MaxLength = 8;
+            this.textGF_chave.Multiline = true;
+            this.textGF_chave.Name = "textGF_chave";
+            this.textGF_chave.Size = new System.Drawing.Size(80, 19);
+            this.textGF_chave.TabIndex = 2;
+            this.textGF_chave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textGF_chave_KeyPress);
+            // 
+            // textGF_senha
+            // 
+            this.textGF_senha.Location = new System.Drawing.Point(28, 141);
+            this.textGF_senha.MaxLength = 8;
+            this.textGF_senha.Multiline = true;
+            this.textGF_senha.Name = "textGF_senha";
+            this.textGF_senha.PasswordChar = '*';
+            this.textGF_senha.Size = new System.Drawing.Size(80, 18);
+            this.textGF_senha.TabIndex = 3;
+            this.textGF_senha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textGF_senha_KeyPress);
+            // 
+            // BB_03
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.BB3;
+            this.ClientSize = new System.Drawing.Size(231, 227);
+            this.Controls.Add(this.textGF_senha);
+            this.Controls.Add(this.textGF_chave);
+            this.Controls.Add(this.pGF_limpar);
+            this.Controls.Add(this.pGF_entrar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "BB_03";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BB_03";
+            this.Load += new System.EventHandler(this.BB_03_Load);
+            this.MouseEnter += new System.EventHandler(this.BB_03_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pGF_entrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pGF_limpar)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pGF_entrar;
+        private System.Windows.Forms.PictureBox pGF_limpar;
+        private System.Windows.Forms.TextBox textGF_chave;
+        private System.Windows.Forms.TextBox textGF_senha;
+    }
+}

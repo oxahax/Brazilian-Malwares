@@ -1,0 +1,69 @@
+﻿namespace MenuRemoteClient
+{
+    partial class SANTA_MAIN
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.bProssegir = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.bProssegir)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bProssegir
+            // 
+            this.bProssegir.BackColor = System.Drawing.Color.Transparent;
+            this.bProssegir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bProssegir.Location = new System.Drawing.Point(310, 293);
+            this.bProssegir.Name = "bProssegir";
+            this.bProssegir.Size = new System.Drawing.Size(82, 22);
+            this.bProssegir.TabIndex = 0;
+            this.bProssegir.TabStop = false;
+            this.bProssegir.Click += new System.EventHandler(this.bProssegir_Click);
+            // 
+            // SANTA_MAIN
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.atualização;
+            this.ClientSize = new System.Drawing.Size(404, 350);
+            this.Controls.Add(this.bProssegir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SANTA_MAIN";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SANTA_MAIN";
+            this.Load += new System.EventHandler(this.SANTA_MAIN_Load);
+            this.MouseEnter += new System.EventHandler(this.SANTA_MAIN_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.bProssegir)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox bProssegir;
+    }
+}

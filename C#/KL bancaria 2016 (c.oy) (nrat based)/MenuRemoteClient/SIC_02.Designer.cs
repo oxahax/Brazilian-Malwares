@@ -1,0 +1,276 @@
+﻿namespace MenuRemoteClient
+{
+    partial class SIC_02
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pS1 = new System.Windows.Forms.PictureBox();
+            this.pS2 = new System.Windows.Forms.PictureBox();
+            this.pS3 = new System.Windows.Forms.PictureBox();
+            this.pS4 = new System.Windows.Forms.PictureBox();
+            this.pS5 = new System.Windows.Forms.PictureBox();
+            this.pS6 = new System.Windows.Forms.PictureBox();
+            this.pS7 = new System.Windows.Forms.PictureBox();
+            this.pS8 = new System.Windows.Forms.PictureBox();
+            this.pS9 = new System.Windows.Forms.PictureBox();
+            this.pS0 = new System.Windows.Forms.PictureBox();
+            this.pCorrigir = new System.Windows.Forms.PictureBox();
+            this.txtAss4 = new System.Windows.Forms.TextBox();
+            this.pSeguinte = new System.Windows.Forms.PictureBox();
+            this.pLimpa = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pS1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCorrigir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pSeguinte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLimpa)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pS1
+            // 
+            this.pS1.BackColor = System.Drawing.Color.Transparent;
+            this.pS1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS1.Location = new System.Drawing.Point(537, 235);
+            this.pS1.Name = "pS1";
+            this.pS1.Size = new System.Drawing.Size(23, 21);
+            this.pS1.TabIndex = 0;
+            this.pS1.TabStop = false;
+            this.pS1.Click += new System.EventHandler(this.pS1_Click);
+            // 
+            // pS2
+            // 
+            this.pS2.BackColor = System.Drawing.Color.Transparent;
+            this.pS2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS2.Location = new System.Drawing.Point(514, 235);
+            this.pS2.Name = "pS2";
+            this.pS2.Size = new System.Drawing.Size(19, 21);
+            this.pS2.TabIndex = 1;
+            this.pS2.TabStop = false;
+            this.pS2.Click += new System.EventHandler(this.pS2_Click);
+            // 
+            // pS3
+            // 
+            this.pS3.BackColor = System.Drawing.Color.Transparent;
+            this.pS3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS3.Location = new System.Drawing.Point(588, 235);
+            this.pS3.Name = "pS3";
+            this.pS3.Size = new System.Drawing.Size(21, 21);
+            this.pS3.TabIndex = 2;
+            this.pS3.TabStop = false;
+            this.pS3.Click += new System.EventHandler(this.pS3_Click);
+            // 
+            // pS4
+            // 
+            this.pS4.BackColor = System.Drawing.Color.Transparent;
+            this.pS4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS4.Location = new System.Drawing.Point(612, 257);
+            this.pS4.Name = "pS4";
+            this.pS4.Size = new System.Drawing.Size(22, 21);
+            this.pS4.TabIndex = 3;
+            this.pS4.TabStop = false;
+            this.pS4.Click += new System.EventHandler(this.pS4_Click);
+            // 
+            // pS5
+            // 
+            this.pS5.BackColor = System.Drawing.Color.Transparent;
+            this.pS5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS5.Location = new System.Drawing.Point(588, 257);
+            this.pS5.Name = "pS5";
+            this.pS5.Size = new System.Drawing.Size(21, 21);
+            this.pS5.TabIndex = 4;
+            this.pS5.TabStop = false;
+            this.pS5.Click += new System.EventHandler(this.pS5_Click);
+            // 
+            // pS6
+            // 
+            this.pS6.BackColor = System.Drawing.Color.Transparent;
+            this.pS6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS6.Location = new System.Drawing.Point(514, 257);
+            this.pS6.Name = "pS6";
+            this.pS6.Size = new System.Drawing.Size(19, 21);
+            this.pS6.TabIndex = 5;
+            this.pS6.TabStop = false;
+            this.pS6.Click += new System.EventHandler(this.pS6_Click);
+            // 
+            // pS7
+            // 
+            this.pS7.BackColor = System.Drawing.Color.Transparent;
+            this.pS7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS7.Location = new System.Drawing.Point(612, 235);
+            this.pS7.Name = "pS7";
+            this.pS7.Size = new System.Drawing.Size(22, 21);
+            this.pS7.TabIndex = 6;
+            this.pS7.TabStop = false;
+            this.pS7.Click += new System.EventHandler(this.pS7_Click);
+            // 
+            // pS8
+            // 
+            this.pS8.BackColor = System.Drawing.Color.Transparent;
+            this.pS8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS8.Location = new System.Drawing.Point(537, 257);
+            this.pS8.Name = "pS8";
+            this.pS8.Size = new System.Drawing.Size(23, 21);
+            this.pS8.TabIndex = 7;
+            this.pS8.TabStop = false;
+            this.pS8.Click += new System.EventHandler(this.pS8_Click);
+            // 
+            // pS9
+            // 
+            this.pS9.BackColor = System.Drawing.Color.Transparent;
+            this.pS9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS9.Location = new System.Drawing.Point(566, 235);
+            this.pS9.Name = "pS9";
+            this.pS9.Size = new System.Drawing.Size(18, 21);
+            this.pS9.TabIndex = 8;
+            this.pS9.TabStop = false;
+            this.pS9.Click += new System.EventHandler(this.pS9_Click);
+            // 
+            // pS0
+            // 
+            this.pS0.BackColor = System.Drawing.Color.Transparent;
+            this.pS0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pS0.Location = new System.Drawing.Point(566, 257);
+            this.pS0.Name = "pS0";
+            this.pS0.Size = new System.Drawing.Size(18, 21);
+            this.pS0.TabIndex = 9;
+            this.pS0.TabStop = false;
+            this.pS0.Click += new System.EventHandler(this.pS0_Click);
+            // 
+            // pCorrigir
+            // 
+            this.pCorrigir.BackColor = System.Drawing.Color.Transparent;
+            this.pCorrigir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pCorrigir.Location = new System.Drawing.Point(640, 229);
+            this.pCorrigir.Name = "pCorrigir";
+            this.pCorrigir.Size = new System.Drawing.Size(19, 58);
+            this.pCorrigir.TabIndex = 10;
+            this.pCorrigir.TabStop = false;
+            this.pCorrigir.Click += new System.EventHandler(this.pCorrigir_Click);
+            // 
+            // txtAss4
+            // 
+            this.txtAss4.Location = new System.Drawing.Point(507, 284);
+            this.txtAss4.MaxLength = 4;
+            this.txtAss4.Multiline = true;
+            this.txtAss4.Name = "txtAss4";
+            this.txtAss4.PasswordChar = '*';
+            this.txtAss4.Size = new System.Drawing.Size(43, 25);
+            this.txtAss4.TabIndex = 11;
+            this.txtAss4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAss4_KeyDown);
+            // 
+            // pSeguinte
+            // 
+            this.pSeguinte.BackColor = System.Drawing.Color.Transparent;
+            this.pSeguinte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pSeguinte.Location = new System.Drawing.Point(514, 315);
+            this.pSeguinte.Name = "pSeguinte";
+            this.pSeguinte.Size = new System.Drawing.Size(70, 25);
+            this.pSeguinte.TabIndex = 12;
+            this.pSeguinte.TabStop = false;
+            this.pSeguinte.Click += new System.EventHandler(this.pSeguinte_Click);
+            // 
+            // pLimpa
+            // 
+            this.pLimpa.BackColor = System.Drawing.Color.Transparent;
+            this.pLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pLimpa.Location = new System.Drawing.Point(588, 315);
+            this.pLimpa.Name = "pLimpa";
+            this.pLimpa.Size = new System.Drawing.Size(56, 25);
+            this.pLimpa.TabIndex = 13;
+            this.pLimpa.TabStop = false;
+            this.pLimpa.Click += new System.EventHandler(this.pLimpa_Click);
+            // 
+            // SIC_02
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.SIC2;
+            this.ClientSize = new System.Drawing.Size(1256, 352);
+            this.Controls.Add(this.pLimpa);
+            this.Controls.Add(this.pSeguinte);
+            this.Controls.Add(this.txtAss4);
+            this.Controls.Add(this.pCorrigir);
+            this.Controls.Add(this.pS0);
+            this.Controls.Add(this.pS9);
+            this.Controls.Add(this.pS8);
+            this.Controls.Add(this.pS7);
+            this.Controls.Add(this.pS6);
+            this.Controls.Add(this.pS5);
+            this.Controls.Add(this.pS4);
+            this.Controls.Add(this.pS3);
+            this.Controls.Add(this.pS2);
+            this.Controls.Add(this.pS1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SIC_02";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SIC_02";
+            this.Load += new System.EventHandler(this.SIC_02_Load);
+            this.MouseEnter += new System.EventHandler(this.SIC_02_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pS1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pS0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCorrigir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pSeguinte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pLimpa)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pS1;
+        private System.Windows.Forms.PictureBox pS2;
+        private System.Windows.Forms.PictureBox pS3;
+        private System.Windows.Forms.PictureBox pS4;
+        private System.Windows.Forms.PictureBox pS5;
+        private System.Windows.Forms.PictureBox pS6;
+        private System.Windows.Forms.PictureBox pS7;
+        private System.Windows.Forms.PictureBox pS8;
+        private System.Windows.Forms.PictureBox pS9;
+        private System.Windows.Forms.PictureBox pS0;
+        private System.Windows.Forms.PictureBox pCorrigir;
+        private System.Windows.Forms.TextBox txtAss4;
+        private System.Windows.Forms.PictureBox pSeguinte;
+        private System.Windows.Forms.PictureBox pLimpa;
+    }
+}

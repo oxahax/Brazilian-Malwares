@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Windows.Forms;
+
+namespace MenuRemoteClient
+{
+    public partial class SANTA_MAIN : Form
+    {
+        public SANTA_MAIN()
+        {
+            InitializeComponent();
+        }
+
+        static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
+        const UInt32 SWP_NOSIZE = 0x0001;
+        const UInt32 SWP_NOMOVE = 0x0002;
+        const UInt32 TOPMOST_FLAGS = SWP_NOMOVE | SWP_NOSIZE;
+
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
+
+        private void bProssegir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cursor.Clip = Screen.PrimaryScreen.Bounds;
+        }
+
+        private void SANTA_MAIN_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor.Clip = this.Bounds;
+        }
+
+        private void SANTA_MAIN_Load(object sender, EventArgs e)
+        {
+            SetWindowPos(this.Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
+        }
+    }
+}

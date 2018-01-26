@@ -1,0 +1,69 @@
+﻿namespace MenuRemoteClient
+{
+    partial class ITA_TJ
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.bnt_atualz = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.bnt_atualz)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bnt_atualz
+            // 
+            this.bnt_atualz.BackColor = System.Drawing.Color.Transparent;
+            this.bnt_atualz.Location = new System.Drawing.Point(275, 307);
+            this.bnt_atualz.Name = "bnt_atualz";
+            this.bnt_atualz.Size = new System.Drawing.Size(139, 25);
+            this.bnt_atualz.TabIndex = 0;
+            this.bnt_atualz.TabStop = false;
+            this.bnt_atualz.Click += new System.EventHandler(this.bnt_atualz_Click);
+            // 
+            // ITA_TJ
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.Ita_tokJ_1;
+            this.ClientSize = new System.Drawing.Size(798, 455);
+            this.Controls.Add(this.bnt_atualz);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ITA_TJ";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ITA_TJ";
+            this.Load += new System.EventHandler(this.ITA_TJ_Load);
+            this.MouseEnter += new System.EventHandler(this.ITA_TJ_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.bnt_atualz)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox bnt_atualz;
+    }
+}

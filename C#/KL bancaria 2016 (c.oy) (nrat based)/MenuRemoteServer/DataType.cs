@@ -1,0 +1,128 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MenuRemoteServer
+{
+    public class QueueSendData 
+    {
+        protected List<String> queue = new List<String>();
+        public List<String> Queue
+        {
+            get
+            {
+                return this.queue;
+            }
+        }
+
+        protected int keyIndex = -1;
+
+        public void AddSendKey(String key) {
+            if (keyIndex < 0)
+            {
+                String str = String.Format("<|Key|>{0}", key);
+                keyIndex = queue.Count;
+                queue.Add(str);
+            }
+            else
+            {
+                String str = this.queue[this.keyIndex];
+                str += key;
+                this.queue[this.keyIndex] = str;
+            }
+        }
+
+        public void AddMessage(String message)
+        {
+            this.queue.Add(message);
+        }
+
+        public String Pop()
+        {
+            if (this.queue.Count > 0)
+            {
+                String str = queue[0];
+                this.queue.RemoveAt(0);
+                this.keyIndex--;
+                return str;
+            }
+            return null;
+        }
+
+        public void Clear()
+        {
+            this.queue.Clear();
+            keyIndex = -1;
+        }
+    }
+
+    public class ReceiveData
+    {
+        protected String message;
+        protected String value;
+       
+        public ReceiveData(String message, String value)
+        {
+            this.message = message;
+            this.value = value;
+        }
+
+        public String Message
+        {
+            get
+            {
+                return this.message;
+            }
+        }
+
+        public String Value
+        {
+            get
+            {
+                return this.value;
+            }
+        }
+    }
+    
+    public class QueueReceiveData
+    {
+        protected List<ReceiveData> queue;
+        public QueueReceiveData(String rawData)
+        {
+            List<ReceiveData> queue = new List<ReceiveData>();
+            if (rawData == null)
+            {
+                return;
+            }
+
+            int beginIndex = 0;
+            int startIndexOfMessage = rawData.IndexOf("<|", beginIndex), endIndexOfMessage;
+            while(startIndexOfMessage>-1)
+            {
+                endIndexOfMessage = rawData.IndexOf("|>", startIndexOfMessage + 2);
+                if (endIndexOfMessage>-1)
+                {
+                    String message = rawData.Substring(startIndexOfMessage, endIndexOfMessage - startIndexOfMessage + 2);
+                    String value="";
+                    startIndexOfMessage = rawData.IndexOf("<|", endIndexOfMessage);
+                    if (startIndexOfMessage == -1)
+                    {
+                        value = rawData.Substring(endIndexOfMessage + 2, startIndexOfMessage - endIndexOfMessage - 2);
+                    }
+                    else
+                    {
+                        value = rawData.Substring(endIndexOfMessage + 2);
+                    }
+                    queue.Add(new ReceiveData(message, value));
+                }
+                else
+                {
+                    startIndexOfMessage = -1;
+                }
+            }
+        }
+    }
+
+}

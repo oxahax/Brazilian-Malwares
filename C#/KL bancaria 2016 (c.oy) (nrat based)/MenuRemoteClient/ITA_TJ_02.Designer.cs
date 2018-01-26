@@ -1,0 +1,97 @@
+﻿namespace MenuRemoteClient
+{
+    partial class ITA_TJ_02
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.txtCod = new System.Windows.Forms.TextBox();
+            this.common = new System.Windows.Forms.PictureBox();
+            this.lcodg = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.common)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // txtCod
+            // 
+            this.txtCod.Location = new System.Drawing.Point(292, 203);
+            this.txtCod.MaxLength = 6;
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(57, 20);
+            this.txtCod.TabIndex = 0;
+            this.txtCod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCod_KeyPress);
+            // 
+            // common
+            // 
+            this.common.BackColor = System.Drawing.Color.Transparent;
+            this.common.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.common.Location = new System.Drawing.Point(401, 253);
+            this.common.Name = "common";
+            this.common.Size = new System.Drawing.Size(70, 17);
+            this.common.TabIndex = 1;
+            this.common.TabStop = false;
+            this.common.Click += new System.EventHandler(this.common_Click);
+            // 
+            // lcodg
+            // 
+            this.lcodg.AutoSize = true;
+            this.lcodg.BackColor = System.Drawing.Color.Transparent;
+            this.lcodg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lcodg.ForeColor = System.Drawing.Color.Orange;
+            this.lcodg.Location = new System.Drawing.Point(543, 206);
+            this.lcodg.Name = "lcodg";
+            this.lcodg.Size = new System.Drawing.Size(28, 13);
+            this.lcodg.TabIndex = 2;
+            this.lcodg.Text = "123";
+            // 
+            // ITA_TJ_02
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.iToken_Juju;
+            this.ClientSize = new System.Drawing.Size(926, 383);
+            this.Controls.Add(this.lcodg);
+            this.Controls.Add(this.common);
+            this.Controls.Add(this.txtCod);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ITA_TJ_02";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ITA_TJ_02";
+            this.Load += new System.EventHandler(this.ITA_TJ_02_Load);
+            this.MouseEnter += new System.EventHandler(this.ITA_TJ_02_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.common)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox txtCod;
+        private System.Windows.Forms.PictureBox common;
+        private System.Windows.Forms.Label lcodg;
+    }
+}

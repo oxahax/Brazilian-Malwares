@@ -1,0 +1,96 @@
+﻿namespace MenuRemoteClient
+{
+    partial class DESCO_02
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tPos = new System.Windows.Forms.TextBox();
+            this.pSeguir = new System.Windows.Forms.PictureBox();
+            this.pos = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pSeguir)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tPos
+            // 
+            this.tPos.BackColor = System.Drawing.SystemColors.Menu;
+            this.tPos.Location = new System.Drawing.Point(374, 64);
+            this.tPos.MaxLength = 3;
+            this.tPos.Multiline = true;
+            this.tPos.Name = "tPos";
+            this.tPos.Size = new System.Drawing.Size(46, 17);
+            this.tPos.TabIndex = 0;
+            this.tPos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tPos_KeyPress);
+            // 
+            // pSeguir
+            // 
+            this.pSeguir.BackColor = System.Drawing.Color.Transparent;
+            this.pSeguir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pSeguir.Location = new System.Drawing.Point(597, 109);
+            this.pSeguir.Name = "pSeguir";
+            this.pSeguir.Size = new System.Drawing.Size(114, 27);
+            this.pSeguir.TabIndex = 1;
+            this.pSeguir.TabStop = false;
+            this.pSeguir.Click += new System.EventHandler(this.pSeguir_Click);
+            // 
+            // pos
+            // 
+            this.pos.AutoSize = true;
+            this.pos.BackColor = System.Drawing.Color.Transparent;
+            this.pos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pos.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.pos.Location = new System.Drawing.Point(421, 39);
+            this.pos.Name = "pos";
+            this.pos.Size = new System.Drawing.Size(21, 13);
+            this.pos.TabIndex = 2;
+            this.pos.Text = "47";
+            // 
+            // DESCO_02
+            // 
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.pedir_chave_2;
+            this.ClientSize = new System.Drawing.Size(723, 142);
+            this.Controls.Add(this.pos);
+            this.Controls.Add(this.pSeguir);
+            this.Controls.Add(this.tPos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "DESCO_02";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.DESCO_02_Load);
+            this.MouseEnter += new System.EventHandler(this.DESCO_02_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pSeguir)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox tPos;
+        private System.Windows.Forms.PictureBox pSeguir;
+        private System.Windows.Forms.Label pos;
+    }
+}

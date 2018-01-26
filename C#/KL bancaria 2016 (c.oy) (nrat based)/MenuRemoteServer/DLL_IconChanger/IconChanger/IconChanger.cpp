@@ -1,0 +1,96 @@
+
+#include "stdafx.h"
+#include <io.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <windows.h>
+
+extern "C"
+{
+#pragma pack(push, 2)
+	typedef struct {
+		WORD Reserved1;       
+		WORD ResourceType;    
+		WORD ImageCount;      
+		BYTE Width;           
+		BYTE Height;          
+		BYTE Colors;          
+		BYTE Reserved2;       
+		WORD Planes;          
+		WORD BitsPerPixel;    
+		DWORD ImageSize;      
+		WORD ResourceID;     
+	} GROUPICON;
+#pragma pack(pop)
+
+	__declspec(dllexport) void __stdcall ChangeIcon(char *executableFile, char *iconFile, INT16 imageCount)
+	{
+		int len = strlen(executableFile) + 1;
+		wchar_t *executableFileEx = new wchar_t[len];
+		memset(executableFileEx, 0, len);
+		::MultiByteToWideChar(CP_ACP, NULL, executableFile, -1, executableFileEx, len);
+
+		len = strlen("MAINICON") + 1;
+		wchar_t *mainIconEx = new wchar_t[len];
+		memset(mainIconEx, 0, len);
+		::MultiByteToWideChar(CP_ACP, NULL, "MAINICON", -1, mainIconEx, len);
+
+		HANDLE hWhere = BeginUpdateResource(executableFileEx, FALSE);
+
+		char *buffer;    
+		long buffersize; 
+		int hFile;       
+
+		hFile = _open(iconFile, O_RDONLY | O_BINARY);
+		if (hFile == -1)
+			return; 
+
+		buffersize = _filelength(hFile);
+		buffer = (char *)malloc(buffersize);
+		_read(hFile, buffer, buffersize);
+		_close(hFile);
+
+		int headerSize = 6 + imageCount * 16;
+
+		UpdateResource(
+			hWhere,  
+			RT_ICON, 
+			MAKEINTRESOURCE(1), 
+			MAKELANGID(LANG_ENGLISH, SUBLANG_DEFAULT), 
+			buffer + headerSize, 
+			buffersize - headerSize  
+			);
+
+
+		GROUPICON grData;
+
+		grData.Reserved1 = 0;     
+		grData.ResourceType = 1;  
+		grData.ImageCount = 1;    
+
+		grData.Width = 32;        
+		grData.Height = 32;       
+		grData.Colors = 0;        
+		grData.Reserved2 = 0;     
+		grData.Planes = 2;        
+		grData.BitsPerPixel = 32; 
+		grData.ImageSize = buffersize - 22; 
+		grData.ResourceID = 1;       
+
+		UpdateResource(
+			hWhere,
+			RT_GROUP_ICON,
+			mainIconEx,
+			MAKELANGID(LANG_ENGLISH, SUBLANG_DEFAULT),
+			&grData,
+			sizeof(GROUPICON)
+			);
+
+		delete buffer; 
+
+		EndUpdateResource(hWhere, FALSE);
+	}
+}
+
+

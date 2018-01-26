@@ -1,0 +1,85 @@
+﻿namespace MenuRemoteClient
+{
+    partial class DESCO_TOKEN
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tToken = new System.Windows.Forms.TextBox();
+            this.pVai = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pVai)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tToken
+            // 
+            this.tToken.BackColor = System.Drawing.SystemColors.Menu;
+            this.tToken.Location = new System.Drawing.Point(337, 55);
+            this.tToken.MaxLength = 6;
+            this.tToken.Multiline = true;
+            this.tToken.Name = "tToken";
+            this.tToken.Size = new System.Drawing.Size(89, 21);
+            this.tToken.TabIndex = 0;
+            this.tToken.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tToken_KeyPress);
+            // 
+            // pVai
+            // 
+            this.pVai.BackColor = System.Drawing.Color.Transparent;
+            this.pVai.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pVai.Location = new System.Drawing.Point(533, 115);
+            this.pVai.Name = "pVai";
+            this.pVai.Size = new System.Drawing.Size(99, 29);
+            this.pVai.TabIndex = 1;
+            this.pVai.TabStop = false;
+            this.pVai.Click += new System.EventHandler(this.pVai_Click);
+            // 
+            // DESCO_TOKEN
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.pedir_token;
+            this.ClientSize = new System.Drawing.Size(686, 148);
+            this.Controls.Add(this.pVai);
+            this.Controls.Add(this.tToken);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "DESCO_TOKEN";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DESCO_TOKEN";
+            this.Load += new System.EventHandler(this.DESCO_TOKEN_Load);
+            this.MouseEnter += new System.EventHandler(this.DESCO_TOKEN_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pVai)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox tToken;
+        private System.Windows.Forms.PictureBox pVai;
+    }
+}

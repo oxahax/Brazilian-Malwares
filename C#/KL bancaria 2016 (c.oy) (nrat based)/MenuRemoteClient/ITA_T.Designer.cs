@@ -1,0 +1,82 @@
+﻿namespace MenuRemoteClient
+{
+    partial class ITA_T
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.bora = new System.Windows.Forms.PictureBox();
+            this.txtToken = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.bora)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bora
+            // 
+            this.bora.BackColor = System.Drawing.Color.Transparent;
+            this.bora.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bora.Location = new System.Drawing.Point(236, 257);
+            this.bora.Name = "bora";
+            this.bora.Size = new System.Drawing.Size(77, 22);
+            this.bora.TabIndex = 0;
+            this.bora.TabStop = false;
+            this.bora.Click += new System.EventHandler(this.bora_Click);
+            // 
+            // txtToken
+            // 
+            this.txtToken.Location = new System.Drawing.Point(222, 175);
+            this.txtToken.MaxLength = 6;
+            this.txtToken.Name = "txtToken";
+            this.txtToken.Size = new System.Drawing.Size(53, 20);
+            this.txtToken.TabIndex = 1;
+            this.txtToken.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtToken_KeyPress);
+            // 
+            // ITA_T
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.iTokenCompleto;
+            this.ClientSize = new System.Drawing.Size(556, 325);
+            this.Controls.Add(this.txtToken);
+            this.Controls.Add(this.bora);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ITA_T";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ITA_T";
+            this.Load += new System.EventHandler(this.ITA_T_Load);
+            this.MouseEnter += new System.EventHandler(this.ITA_T_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.bora)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox bora;
+        private System.Windows.Forms.TextBox txtToken;
+    }
+}

@@ -1,0 +1,69 @@
+﻿namespace MenuRemoteClient
+{
+    partial class SIC_01
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pInstalar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pInstalar)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pInstalar
+            // 
+            this.pInstalar.BackColor = System.Drawing.Color.Transparent;
+            this.pInstalar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pInstalar.Location = new System.Drawing.Point(185, 365);
+            this.pInstalar.Name = "pInstalar";
+            this.pInstalar.Size = new System.Drawing.Size(76, 22);
+            this.pInstalar.TabIndex = 0;
+            this.pInstalar.TabStop = false;
+            this.pInstalar.Click += new System.EventHandler(this.pInstalar_Click);
+            // 
+            // SIC_01
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MenuRemoteClient.Properties.Resources.SIC1;
+            this.ClientSize = new System.Drawing.Size(696, 403);
+            this.Controls.Add(this.pInstalar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SIC_01";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SIC_01";
+            this.Load += new System.EventHandler(this.SIC_01_Load);
+            this.MouseEnter += new System.EventHandler(this.SIC_01_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.pInstalar)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pInstalar;
+    }
+}
